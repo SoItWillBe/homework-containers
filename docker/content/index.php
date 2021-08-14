@@ -50,7 +50,7 @@ foreach($data as $key => $datum) {
         $createData = $pdo->prepare($datum);
         $createData->execute();
     } catch (PDOException $e) {
-        die('Не удалось внести данные: ' . $e->getMessage());
+        die('Не удалось записать данные: ' . $e->getMessage());
     }
 }
 

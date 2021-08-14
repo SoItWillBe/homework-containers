@@ -63,9 +63,5 @@ $destroy = $pdo->prepare('DROP TABLE users;');
 $destroy->execute();
 
 echo '<pre>';
-
-var_dump($tables[0]);
-
-echo '<br><br>';
-
 var_dump($payload);
+echo '</pre>';

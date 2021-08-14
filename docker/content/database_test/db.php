@@ -12,7 +12,5 @@ $createData->execute();
 $query = $connect->prepare('SELECT * FROM user;');
 $result = $query->fetchAll();
 
-var_dump($result);
-
 $destroy = $connect->prepare('DROP TABLE user');
 $destroy->execute();
